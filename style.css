@@ -1,0 +1,151 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #00111C;
+    color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 45px;
+    font-weight: 600;
+    color: #F8F9FA;
+    margin-bottom: 20px;
+}
+
+.app {
+    width: 333px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #001523;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inputDiv {
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: #001A2C;
+}
+
+.todo-input {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #F8F9FA;
+    border: 1px solid #DEE2E6;
+    border-radius: 3px;
+    flex: 1;
+    width: 0;
+    outline: none;
+}
+
+.todo-input::placeholder {
+    color: #DEE2E6;
+}
+
+.btn {
+    font-size: 16px;
+    background-color: #0582CA;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 20px;
+    color: #F8F9FA;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-btn,
+.save-btn {
+    margin-left: 5px;
+    background-color: #E9ECEF;
+    color: #212529;
+}
+
+#todos {
+    padding: 0px 10px;
+    margin-top: -6px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #002137;
+}
+
+.todoDiv {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    column-gap: 5px;
+    padding: 5px 0px;
+}
+
+.todo-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 2px solid #DEE2E6;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-checkbox:checked {
+    background-color: #F8F9FA;
+    border: 0;
+}
+
+.todo-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: 2px solid #212529;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.todo-title {
+    font-size: 16px;
+    color: #F8F9FA;
+    transition: color 0.3s;
+}
+
+.isDone {
+    text-decoration: line-through;
+    color: #ADB5BD;
+}
+
+.edit-btn {
+    padding: 5px 10px;
+    background-color: #00A6FB;
+    /* color: #212529; */
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #D80032; 
+    color: #F8F9FA;
+}
+
+.editDiv {
+    background-color: transparent;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+/* #1
+    ["#ffe169","#fad643","#edc531","#dbb42c","#c9a227","#b69121","#a47e1b","#926c15","#805b10","#76520e"]
+    #2
+    ["f8f9fa","e9ecef","dee2e6","ced4da","adb5bd","6c757d","495057","343a40","212529"]
+    #3
+    ["04080f","507dbc","a1c6ea","bbd1ea","dae3e5"]; */
