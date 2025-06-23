@@ -143,9 +143,8 @@ body {
     border-radius: 5px;
 }
 
-/* #1
-    ["#ffe169","#fad643","#edc531","#dbb42c","#c9a227","#b69121","#a47e1b","#926c15","#805b10","#76520e"]
-    #2
-    ["f8f9fa","e9ecef","dee2e6","ced4da","adb5bd","6c757d","495057","343a40","212529"]
-    #3
-    ["04080f","507dbc","a1c6ea","bbd1ea","dae3e5"]; */
+@media (max-width: 768px) {
+  .todoDiv {
+    padding: 15px 0px;
+  }
+}
